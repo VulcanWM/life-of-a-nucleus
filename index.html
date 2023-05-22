@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Life of a Nucleus</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="content">
+    <button onclick="reset()" id="reset">Reset</button>
+    <p id="extra" class="message">Try to get the most cells in the least days!</p>
+    <p>Day <span class="day" id="day">1</span></p>
+    <p>Cells: <span class="cells" id="cells">1</span></p>
+    <p>Cells per Day: <span class="cpd" id="cpd">1</span></p>
+    <button id="buycpd" onclick="buycpd()">Increase CPD to 2 for 25 Cells</button>
+    <p class="question" id="question">Question: </p>
+    <button onclick="check_answer('a')" id="option1">Option (A)</button>
+    <br>
+    <button onclick="check_answer('b')" id="option2">Option (B)</button>
+    <br>
+    <button onclick="check_answer('c')" id="option3">Option (C)</button>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
